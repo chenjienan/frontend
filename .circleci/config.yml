@@ -41,7 +41,7 @@ jobs:
 
       - run:
           command: |
-            docker build -t terence.azurecr.io/frontend:1.0 .
+            docker build -t terence.azurecr.io/frontend:1.0 ./dist/apps/client
       - run:
           command: |
             docker login --username $DOCKER_USER --password $DOCKER_PASS terence.azurecr.io
